@@ -53,17 +53,17 @@ class TotalDigits:
 
         for i in range(len(self.arr)):
 
-            isNumber=False
+            number_count_start=False
 
             for j in range(len(self.arr[0])):
 
-                if not isNumber and self.arr[i][j].isdigit():
-                    isNumber = True
+                if not number_count_start and self.arr[i][j].isdigit():
+                    number_count_start = True
                     tot+=self.get_number(i,j)
 
                 
-                if isNumber and not self.arr[i][j].isdigit():
-                    isNumber=False
+                if number_count_start and not self.arr[i][j].isdigit():
+                    number_count_start=False
         return tot
 
 
