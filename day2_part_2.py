@@ -6,6 +6,7 @@
 # We just need to find out the maximum count per color and multiply it , and finally add the result
 
 tot = 0
+
 while True:
 
     try:
