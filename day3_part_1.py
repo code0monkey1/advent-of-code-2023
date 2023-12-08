@@ -2,6 +2,7 @@ class TotalDigits:
 
     def __init__(self):
         self.arr = []
+        self.fill_array()
 
     def get_number(self, i, j):
 
@@ -69,5 +70,4 @@ class TotalDigits:
 
 if __name__ == "__main__":
     td = TotalDigits()
-    td.fill_array()
     print(td.get_total())
